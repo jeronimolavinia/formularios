@@ -34,10 +34,13 @@ class UserView extends React.Component<ViewProps, ViewState>{
         onChange={handleChange}
         name ='message'
         />
-        <button type="submit">Entrar</button>
+        <button type="submit">Enviar</button>
+        <span>{formSent?'Formulário enviado com sucesso!':''}</span> 
       </form>
     );     
   }
 }  
-
+//ternário: verifica se a mensagem enviada é verdadeira ou falsa   
+//<span>{formSent?'Formulário enviado com sucesso!':''}</span> 
+      
 export default UserView;
